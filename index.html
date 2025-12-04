@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>2A Contabilidade - Ágil e Segura</title>
+    <meta name="description" content="Contabilidade especializada para Pequenas e Médias Empresas em São Gonçalo, Niterói, Maricá e Itaboraí." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: #fff;
+        color: #1e293b;
+        scroll-behavior: smooth;
+      }
+      
+      /* Hide scrollbar for cleaner look but keep functionality */
+      body::-webkit-scrollbar {
+        width: 8px;
+      }
+      body::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      body::-webkit-scrollbar-thumb {
+        background-color: rgba(2, 50, 186, 0.2);
+        border-radius: 4px;
+      }
+
+      /* Animations */
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+      .animate-float-slow { animation: float 8s ease-in-out infinite; }
+      .animate-float-medium { animation: float 6s ease-in-out infinite; }
+      .animate-float-fast { animation: float 4s ease-in-out infinite; }
+
+      @keyframes move-background {
+        0% { background-position: 0 0; }
+        100% { background-position: 40px 40px; }
+      }
+      .animate-moving-grid {
+        animation: move-background 3s linear infinite;
+      }
+
+      @keyframes blob {
+        0% { transform: translate(0px, 0px) scale(1); }
+        33% { transform: translate(30px, -50px) scale(1.1); }
+        66% { transform: translate(-20px, 20px) scale(0.9); }
+        100% { transform: translate(0px, 0px) scale(1); }
+      }
+      .animate-blob {
+        animation: blob 7s infinite;
+      }
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+
+      @keyframes rise {
+        0% { transform: translateY(110vh) rotate(0deg); opacity: 0; }
+        10% { opacity: 0.15; }
+        90% { opacity: 0.15; }
+        100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+      }
+      .animate-rise {
+        animation: rise infinite linear;
+        position: absolute;
+        bottom: -100px; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
