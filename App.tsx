@@ -574,3 +574,5 @@ function App() {
 }
 
 export default App;
+
+<Route path="/decore" element={<Decore />} />
